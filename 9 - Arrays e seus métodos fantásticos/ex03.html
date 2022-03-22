@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3 Torper e Drofo</title>
+    <script>
+        var inv_drofo = ["anel invisibilidade", "botas magicas", "botas magicas", "pocao sono", "pocao inocencia", "pocao inocencia", ];
+        var inv_topper = ["capa invisibilidade", "pocao anti inteligencia", "pedra do despertar", "varinha das varinhas", "pocao da inocencia", "pocao da mentira", "pocao da mentira"];
+        
+        inv_topper.pop(); //usa poção de mentira
+        inv_topper.splice(2,2); //perde pedra
+        inv_topper.push("Botas Mágicas"); //ganha par de bota do drofo
+        inv_topper.push("Escudo Mágico");// acha um escudo mágico
+        inv_topper.push("Espada Mágicas");// acha uma espada
+        inv_topper.splice(1,1); //drofo usa poção de anti-inteligencia de topper
+        inv_drofo.splice(2,2); //drofo entrega par de botas
+
+
+        inv_drofo.push("Botas Mágicas");// acha mais uma bota magica
+        inv_drofo.splice(3,3)// usa poção sono
+        //usa poção de anti-inteligencia do topper
+
+        inv_drofo.push("Ovo de Dragão")
+        inv_drofo.push("Coxinha");
+
+
+        document.write("Inventario do Topper: "+inv_topper + "<br><br><br><br>");
+        document.writeln("Inventario do Drofo: " +inv_drofo);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
